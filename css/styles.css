@@ -857,8 +857,6 @@ body {
 }
 
 .policy-checkbox {
-  width: 16px;
-  height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: inline-flex;
@@ -883,7 +881,7 @@ body {
   color: #4d5ae5;
 }
 
-.policy-checkbox:checked + .policy-span /*.policy-checkbox */ {
+.policy-checkbox:checked + .policy-span .policy-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
