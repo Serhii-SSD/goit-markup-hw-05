@@ -75,10 +75,10 @@ ul {
   justify-content: center;
   flex-direction: row;
   gap: 40px;
+  color: #2e2f42;
 }
 .nav-link {
   font-family: "Roboto", sans-serif;
-  color: #404bbf;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -91,6 +91,7 @@ ul {
 }
 .nav-link-active {
   position: relative;
+  color: #404bbf;
 }
 .nav-link-active::after {
   content: "";
@@ -98,7 +99,7 @@ ul {
   width: 100%;
   border-radius: 2px;
   height: 4px;
-  color: #404bbf;
+
   background-color: #404bbf;
   left: 0;
   bottom: -1px;
