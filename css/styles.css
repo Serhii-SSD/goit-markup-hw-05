@@ -715,7 +715,7 @@ body {
   background-color: #404bbf;
 }
 .modal-close-icon {
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
@@ -840,6 +840,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  cursor: pointer;
 }
 .policy-span {
   width: 16px;
@@ -850,9 +851,16 @@ body {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.policy-svg {
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
 
@@ -881,7 +889,7 @@ body {
   color: #4d5ae5;
 }
 
-.policy-checkbox:checked + .policy-span .policy-span {
+.policy-checkbox:checked + .policy-label > .policy-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
