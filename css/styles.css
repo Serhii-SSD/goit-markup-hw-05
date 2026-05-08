@@ -827,7 +827,6 @@ input::placeholder {
   width: 100%;
 }
 .policy-label {
-  display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
