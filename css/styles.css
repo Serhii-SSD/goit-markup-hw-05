@@ -481,21 +481,17 @@ body {
   background-color: #2e2f42;
   padding: 100px 0;
   align-items: baseline;
+  display: block;
+  gap: 16px;
 }
 .footer-box {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
-  flex-direction: row;
-  gap: 48px;
   align-items: baseline;
 }
 .footer-logo-wrapper {
   margin-right: 120px;
 }
 .footer-social-wrapper {
-  align-items: center;
-  justify-content: center;
   margin-right: auto;
 }
 .footer-subscribe-wrapper {
@@ -506,21 +502,21 @@ body {
   justify-content: center;
 }
 
+.footer-social-title,
 .footer-subscribe-title {
-  font-family: "Roboto", sans-serif;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: white;
+  color: #fff;
 }
 .submit-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
+
   border-radius: 4px;
   min-width: 165px;
   height: 40px;
@@ -557,18 +553,16 @@ body {
   background-color: #2e2f42;
 }
 .subscr-input {
-  display: flex;
   width: 264px;
   height: 40px;
-  border: 1px solid white;
-  padding-left: 16px;
-  color: #fff;
+  padding: 8px 16px;
+
+  border: 1px solid #fff;
   border-radius: 4px;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
+  background: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 ::placeholder {
   color: #ffffff;
@@ -588,14 +582,6 @@ body {
   border: none;
 }
 
-.footer-social-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
-}
 .footer-social-list {
   display: flex;
   gap: 16px;
@@ -633,23 +619,23 @@ body {
   justify-content: center;
 }
 .footer-description {
-  color: #f4f4fd;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
   max-width: 264px;
 }
 
 .footer-logo {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
-  text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
