@@ -518,11 +518,11 @@
         </div>
       </footer>
 
-      <div class="backdrop">
+      <div class="backdrop is-open">
         <div class="modal">
           <button class="modal-close-btn" type="button">
             <svg class="modal-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#close-black-18dp-2-11"></use>
+              <use href="./images/icons.svg#close"></use>
             </svg>
           </button>
           <p class="modal-title">
@@ -587,12 +587,14 @@
 
             <div class="policy-wrapper">
               <input
-                type="checkbox"
                 class="policy-checkbox visually-hidden"
+                type="checkbox"
                 name="user-privacy"
                 id="user-privacy"
                 value="true"
-              /><label class="policy-label" for="user-privacy">
+              />
+
+              <label class="policy-label" for="user-privacy">
                 <span class="policy-span">
                   <svg width="10" height="8" class="policy-svg">
                     <use href="./images/icons.svg#check"></use>
